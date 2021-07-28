@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			  
+				<section data-auto-animate>
+				  <h1>Auto-Animate</h1>
+				</section>
+				
+				<section data-auto-animate>
+				  <h1 style="margin-top: 100px;">Auto-Animate</h1>
+				</section>
+				
+				<section data-auto-animate>
+				  <h1 style="margin-top: 100px;">Auto-Animate</h1>
+				  <h1 style=>Is the best</h1>
+				</section>
+				
+				<section data-auto-animate>
+				  <h1 style="margin-top: 100px; color: Salmon; letter-spacing: -10px">Auto-Animate</h1>
+				  <h1 style=>Is the best</h1>
+				</section>
+				
+				<!-- 
+				Moving elements 
+				-->
+				
+				<section data-auto-animate>
+				  <div class="r-hstack">
+				    <p style="background: salmon; padding: 1em">1</p>
+				    <p style="background: indigo; padding: 1em">2</p>
+				    <p style="background: pink; padding: 1em">3</p>
+				  </div>
+				</section>
+				
+				<section data-auto-animate>
+				  <div class="r-vstack items-start">
+				    <p style="background: salmon; padding: 1em">1</p>
+				    <p style="background: indigo; padding: 1em">2</p>
+				    <p style="background: pink; padding: 1em">3</p>
+				  </div>
+				</section>
+				
+				<section data-auto-animate>
+				  <div class="r-vstack items-end">
+				    <p style="background: salmon; padding: 1em">1</p>
+				    <p style="background: indigo; padding: 1em">2</p>
+				    <p style="background: pink; padding: 1em">3</p>
+				  </div>
+				</section>
+				
+				<section data-auto-animate>
+				  <div class="r-vstack items-start">
+				    <p data-auto-animate-delay="0.1" style="background: salmon; padding: 1em">1</p>
+				    <p data-auto-animate-delay="0.2" style="background: indigo; padding: 1em">2</p>
+				    <p data-auto-animate-delay="0.3" style="background: pink; padding: 1em">3</p>
+				  </div>
+				</section>
+				
+				<section data-auto-animate>
+				  <div class="r-vstack items-end">
+				    <p data-auto-animate-delay="0.1" data-auto-animate-duration = "1" style="background: salmon; padding: 1em">1</p>
+				    <p data-auto-animate-delay="0.2" data-auto-animate-duration = "1.5" style="background: indigo; padding: 1em">2</p>
+				    <p data-auto-animate-delay="0.3" data-auto-animate-duration = "2" style="background: pink; padding: 1em">3</p>
+				  </div>
+				</section>
+				
+				<!-- 
+				data-id
+				-->
+				
+				<section data-auto-animate>
+				  <div data-id="rect" style="background: red; width: 50px; height: 50px;"></div>
+				</section>
+				
+				<section data-auto-animate>
+				  <div data-id="rect" style="background: red; width: 250px; height: 250px;"></div>
+				</section>
+				
+				<!-- 
+				list
+				-->
+				
+				<section data-auto-animate>
+				  <ul>
+				    <li>Mercury</li>
+				    <li>Earth</li>
+				    <li>Mars</li>
+				  </ul>
+				</section>
+				
+				<section data-auto-animate>
+				  <ul>
+				    <li>Mercury</li>
+				    <li>Jupiter</li>
+				    <li>Earth</li>
+				    <li>Saturn</li>
+				    <li>Mars</li>
+				  </ul>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+        
+        // autoAnimateEasing: 'ease',
+        // easings.net for eqations
+        autoAnimateEasing: 'cubic-bezier(0.83, 0, 0.17, 1)',
+        
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

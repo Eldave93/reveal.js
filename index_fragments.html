@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			  <section>
+				  <h1>Fragments</h1>
+				  
+				</section>
+				
+				<section>
+				  <h2>The Four Galilean Moons</h2>
+				  
+				  <ul>
+				    <li class="fragment">Io</li>
+				    <li class="fragment">Europa</li>
+				    <li class="fragment">Ganymede</li>
+				    <li class="fragment">Callisto</li>
+				  </ul>
+				  
+				</section>
+				
+				<section>
+				  <h2>The Four Galilean Moons</h2>
+				  
+				  <ul>
+				    <li class="fragment fade-out">Io</li>
+				    <li class="fragment fade-out">Europa</li>
+				    <li class="fragment fade-out">Ganymede</li>
+				    <li class="fragment fade-out">Callisto</li>
+				  </ul>
+				  
+				</section>
+				
+				<section>
+				  <h2>The Four Galilean Moons</h2>
+				  
+				  <ul>
+				    <li class="fragment strike">Io</li>
+				    <li class="fragment strike">Europa</li>
+				    <li class="fragment strike">Ganymede</li>
+				    <li class="fragment strike">Callisto</li>
+				  </ul>
+				  
+				</section>
+				
+				<section>
+				  <h2>The Four Galilean Moons</h2>
+				  
+				  <ul>
+				    <li class="fragment fade-left">Io</li>
+				    <li class="fragment fade-left">Europa</li>
+				    <li class="fragment fade-left">Ganymede</li>
+				    <li class="fragment fade-left">Callisto</li>
+				  </ul>
+				  
+				</section>
+				
+				<section>
+				  <h2>
+				    <span data-fragment-index="1" class="fragment fade-left">Who</span>
+				    <span data-fragment-index="1" class="fragment fade-left">was</span>
+				    <span data-fragment-index="0" class="fragment fade-left">David Elliott</span>
+				    <span data-fragment-index="1" class="fragment fade-left">?</span>
+				  </h2>
+				  
+				</section>
+				
+				<section>
+				  <h2 class="fragment strike" data-fragment-index="2">
+				    <span data-fragment-index="1" class="fragment fade-left">Who</span>
+				    <span data-fragment-index="1" class="fragment fade-left">was</span>
+				    <span data-fragment-index="0" class="fragment fade-left">David Elliott</span>
+				    <span data-fragment-index="1" class="fragment fade-left">?</span>
+				  </h2>
+				  
+				</section>
+				
+				<section>
+				  <p>This is a <span class="fragment highlight-red">long</span> sentence where we want to <span class="fragment highlight-red">highlight</span> certain bits of text</p>
+				  
+				</section>
+				
+				<!-- Custom -->
+				<style type="text/css">
+				  .spotlight {
+				    transform: translateY(100px);
+				    transform-origin 0 0;
+				  }
+				  .spotlight.visible {
+				    transform: none;
+				    color: #555;
+				  }
+				  .spotlight.current-fragment {
+				    transform: scale(1.5);
+				    color: #fff;
+				  }
+				  </style>
+				  <section>
+				  <h2>The Four Galilean Moons</h2>
+				  
+				  <ul>
+				    <li class="fragment spotlight">Io</li>
+				    <li class="fragment spotlight">Europa</li>
+				    <li class="fragment spotlight">Ganymede</li>
+				    <li class="fragment spotlight">Callisto</li>
+				  </ul>
+				  
+				</section>
+				
+				<section>
+				  <h2>The End</h2>
+				  
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

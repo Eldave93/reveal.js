@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				  <h1>Heading 1</h1>
+				  <h2>Heading 2</h2>
+				  <p>Paragraph</p>
+				</section>
+				<section>
+				  <h1>Quote</h1>
+				  <blockquote>
+				    All for one, one for all!
+				  </blockquote>
+				</section>
+				<section>
+				  <!-- <h1>Image</h1> -->
+				  <img data-src="https://revealjs.com/images/logo/reveal-black-text.svg" width="100%"></img>
+				</section>
+				<section>
+				  <!-- <h1>video</h1> -->
+				  <video data-src="sample-mp4-file.mp4" controls muted width="100%"></video>
+				</section>
+				
+				<section>
+				  <!-- <h1>iframe</h1> -->
+				  <iframe data-src="https://revealjs.com/demo/" width="900px" height="600px" data-preload></iframe>
+				</section>
+				<section>
+				  <!-- <h1>iframe_YouTube</h1> -->
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/T1th3eBJu70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-autoplay></iframe>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				
+				autoPlayMedia: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

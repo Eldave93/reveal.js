@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+	</head>
+	
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h2>Vertical Slides</h2></section>
+				<section>
+				  <section><h2>Slide 1.1</h2></section>
+				  <section><h2>Slide 1.2</h2></section>
+				  <section><h2>Slide 1.3</h2></section>
+				</section>
+				<section>
+				  <section><h2>Slide 2.1</h2></section>
+				  <section><h2>Slide 2.2</h2></section>
+				  <section><h2>Slide 2.3</h2></section>
+				</section>
+				
+				<section>Slide 3
+				  <p><a href="#/the-end">Jump to the end</a></p>
+				
+				</section>
+				<section>Slide 4</section>
+				<section data-visibility="hidden">Slide 5</section>
+				<section>
+				  <h1>Heading</h1>
+				  <h2>Sub heading</h2>
+				  <ul>
+				    <li>One</li>
+				    <li>Two</li>
+				    <li>Three</li>
+				  </ul>
+				</section>
+				<section id="the-end"><h1>The End</h1></section>
+				<section data-visibility="uncounted">Bonus Slide 1</section>
+				<section data-visibility="uncounted">Bonus Slide 2</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				
+				navigationMode: 'linear',
+			});
+		</script>
+	</body>
+</html>

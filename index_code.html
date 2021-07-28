@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			  <section>
+				  <h1>Presenting Code</h1>
+				  
+				  <pre><code>
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				      { name: 'jupiter' },
+				    ]
+				  </pre></code>
+				  
+				</section>
+				
+				<section>
+				  
+				  <pre><code data-trim>
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				      { name: 'jupiter' },
+				    ]
+				  </pre></code>
+				  
+				</section>
+				
+				<!-- Specify language using highlightjs.org -->
+				<section>
+				  
+				  <pre><code data-trim class="js">
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				      { name: 'jupiter' },
+				    ]
+				  </pre></code>
+				  
+				</section>
+				
+				<!--  
+				To switch themes change the theme above to the new module path
+				so something like:
+				<link rel="stylesheet" href="node_modules/highlight.js/styles/arta.css">
+				-->
+				
+				<!-- Line Numbers -->
+				<section>
+				  
+				  <pre><code data-line-numbers data-trim class="js">
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				      { name: 'jupiter' },
+				    ]
+				  </pre></code>
+				  
+				</section>
+				
+				<section>
+				  
+				  <pre><code data-line-numbers="2-3" data-trim class="js">
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				      { name: 'jupiter' },
+				    ]
+				  </pre></code>
+				  
+				</section>
+				
+				<section>
+				  
+				  <pre><code data-line-numbers="2,4" data-trim class="js">
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				      { name: 'jupiter' },
+				    ]
+				  </pre></code>
+				  
+				</section>
+				
+				<!-- Stepped Highlighting -->
+				
+				<section>
+				  
+				  <pre><code data-line-numbers="2|4" data-trim class="js">
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				      { name: 'jupiter' },
+				    ]
+				  </pre></code>
+				  
+				</section>
+				
+				<!-- Markdown -->
+				
+				<section data-markdown>
+				  
+				  ```js [1,3]
+				  let a = 1;
+				  let b = 2;
+				  let c = 3;
+				  ```
+				  
+				</section>
+				
+				<section data-markdown>
+				  
+				  ```js []
+				  let a = 1;
+				  let b = 2;
+				  let c = 3;
+				  ```
+				  
+				</section>
+				
+				<section data-markdown>
+				  
+				  ```js [1|2|3]
+				  let a = 1;
+				  let b = 2;
+				  let c = 3;
+				  ```
+				  
+				</section>
+				
+				
+				<!-- Animations -->
+				
+				<section data-auto-animate>
+				  <h1>Presenting Animated Code</h1>
+				  
+				  <pre data-id="planets"><code data-line-numbers data-trim class="js">
+				    let planets = [
+				      ...
+				    ]
+				  </code></pre>
+				  
+				</section>
+				<section data-auto-animate>
+				  <h1>Presenting Animated Code</h1>
+				  
+				  <pre data-id="planets"><code data-line-numbers data-trim class="js">
+				    let planets = [
+				      { name: 'mars' },
+				    ]
+				  </code></pre>
+				  
+				</section>
+				
+				<section data-auto-animate>
+				  <h1>Presenting Animated Code</h1>
+				  
+				  <pre data-id="planets"><code data-line-numbers data-trim class="js">
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				    ]
+				  </code></pre>
+				  
+				</section>
+				
+				<section data-auto-animate>
+				  <h1>Presenting Animated Code</h1>
+				  
+				  <pre data-id="planets"><code data-line-numbers data-trim class="js">
+				    let planets = [
+				      { name: 'mars' },
+				      { name: 'earth', habitable: true },
+				      { name: 'jupiter' },
+				    ]
+				  </code></pre>
+				  
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
